@@ -5,9 +5,207 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #333333
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar-brand {
+  text-align: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.carousel-caption h2, p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  opacity: 0.7;
+}
+
+.header-nav {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #05A3C8;
+  font-size: 20px;
+}
+
+.form-content {
+  background-color: #E7E3E4;
+  padding: 8px;
+}
+.ourmenu {
+  color: white;
+  margin-top: 60px !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-item {
+  display: block;
+  flex: 1;
+  padding: 15px;
+  border: #E7E3E4;
+  border-width: 1px;
+  border-style: solid;
+  width: 20% !important;
+  padding: 0px !important;
+}
+
+.spec-item {
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.spec-tag {
+  position: absolute;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 25px;
+  background-color: #FDFE00;
+}
+.buy-button {
+  border-radius: 5%;
+  color :white;
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  background-color: #353A40;
+}
+.menu-item img {
+  display: block;
+  width: 100%;
+}
+
+.item-description {
+  padding: 18px 15px;
+  background-color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.form-input input {
+  height: 26px;
+  width: 200px;
+}
+
+.form-input select {
+  width: 208px;
+  height: 32px;
+}
+
+.form-input label {
+  width: 150px;
+}
+
+.footer-content {
+  text-align: center; 
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 50px;
+}
+
+.booking-form {
+  margin: auto !important;
+  background-color: #333;
+  padding-left: 10px !important;
+  padding-right: 0px !important;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.booking-form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.our-menu-item {
+  column-gap: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-row input, .form-row select {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 20px 0px !important;
+  resize: none;
+}  
+
+.send-message {
+  font-size: medium;
+  align-items: center;
+  display: block !important;
+  width: 12%;
+  font-weight: bold;
+  height: 35px;
+  background-color: #ffcc00;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: none;
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 30px !important;
+  height: 30px !important;
+
+}
+.carousel-control-prev-icon {
+  background-image: url('/src/images/left.svg') !important;
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+.carousel-control-next-icon {
+  background-image: url('/src/images/right.svg') !important;
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+.nav-link.active {
+  color: white !important; /* Change to your desired color */
+}
+.nav-link {
+  color: #777575 !important; 
+  cursor: pointer;
+
 }
