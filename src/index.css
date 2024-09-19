@@ -201,6 +201,9 @@ textarea {
   --bs-gutter-x: 0rem !important;
 }
 
+a:hover {
+  color: white !important; /* Change to your desired color */
+}
 .nav-link.active {
   color: white !important; /* Change to your desired color */
 }
