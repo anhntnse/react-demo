@@ -185,14 +185,14 @@ textarea {
 
 }
 .carousel-control-prev-icon {
-  background-image: url('/src/images/left.svg') !important;
+  background-image: url('/public/images/left.svg') !important;
   background-size: contain; 
   background-repeat: no-repeat; 
   background-position: center; 
 }
 
 .carousel-control-next-icon {
-  background-image: url('/src/images/right.svg') !important;
+  background-image: url('/public/images/right.svg') !important;
   background-size: contain; 
   background-repeat: no-repeat; 
   background-position: center; 
