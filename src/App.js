@@ -33,10 +33,9 @@ function App() {
             </ul>
             <form className="d-flex">
               <input
-                className="form-control me-2"
+                className="form-control me-2 search-bar"
                 type="text"
                 placeholder="Search"
-                style={{ marginRight: 0, height: '40px', width: '350px' }}
               />
               <button
                 className="btn btn-danger"
