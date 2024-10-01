@@ -1,49 +1,40 @@
-const Header = () => {
-    return <>
-    {/* Navbar */}
-    <nav className="navbar navbar-expand-lg">
-        <div className="container">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <a className="navbar-brand" style={{ color: 'white', textAlign: 'left' }}>Pizza House</a>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link">About Us</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link">Contact</a>
-              </li>
-            </ul>
-            <form className="d-flex">
-              <input
-                className="form-control me-2 search-bar"
+import React from 'react';
+import { Navbar, Nav, Container, Form, Button } from 'react-bootstrap';
+import ItemsButton from './ItemsButton';
+
+const Header = ({ itemCount, onModalToggle }) => {
+  return (
+    <>
+      {/* Navbar */}
+      <Navbar  className="custom-navbar" variant="dark" expand="lg" >
+        <Container>
+          <Navbar.Brand href="#" style={{ textAlign: 'left' }}>Pizza House</Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarTogglerDemo03" />
+          <Navbar.Collapse id="navbarTogglerDemo03">
+            <Nav className="me-auto">
+              <Nav.Link href="#">Home</Nav.Link>
+              <Nav.Link href="#">About Us</Nav.Link>
+              <Nav.Link href="#">Contact</Nav.Link>
+            </Nav>
+            <Form className="d-flex form-search">
+              <Form.Control
                 type="text"
                 placeholder="Search"
+                className="me-2 search-bar"
               />
-              <button
-                className="btn btn-danger"
-                type="button"
+              <Button
+                variant="danger"
                 style={{ width: '50px', alignItems: 'center', padding: 0, height: '40px' }}
               >
                 <i className="fa fa-search"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
+              </Button>
+            </Form>
+            <ItemsButton itemCount={itemCount} onClick={onModalToggle} /> {/* Trigger modal on click */}
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
-}
+  );
+};
+
 export default Header;
