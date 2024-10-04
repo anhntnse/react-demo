@@ -105,6 +105,11 @@ code {
   border-bottom: 1px solid #E7E3E4 !important;
 }
 
+.number-purchase {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
 
 .card {
   width: 95%;

@@ -21,11 +21,11 @@ const EditPurchaseModal = ({
             (item, index) =>
               counts[index] > 0 && (
                 <Row key={index} className="mb-3 align-items-center">
+                  <Col className="col-2"> <img src = {item.imgSrc} alt= "Item" style={{width: '50px', height: '50px'}}></img></Col>
                   <Col>{item.name}</Col>
                   <Col>
                     <Button
-                      className="decrease-button"
-                      variant="outline-secondary"
+                      variant="danger"
                       onClick={() => {
                         if (counts[index] > 0) {
                           onItemCountChange(index, counts[index] - 1);
@@ -40,7 +40,7 @@ const EditPurchaseModal = ({
                     </span>
                     <Button
                       className="increase-button"
-                      variant="outline-secondary"
+                      variant="primary"
                       onClick={() =>
                         onItemCountChange(index, counts[index] + 1)
                       }
