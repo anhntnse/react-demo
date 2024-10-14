@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #333333 !important;
+  
 }
 
 code {
@@ -60,9 +61,12 @@ code {
 }
 .ourmenu {
   color: white;
-  margin-top: 60px !important;
+  margin-top: 80px !important;
+  margin-bottom: 30px;
   font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
+
 
 .menu-item {
   display: flex;

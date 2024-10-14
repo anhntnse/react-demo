@@ -8,11 +8,11 @@ const ItemsButton = ({ itemCount, onClick }) => {
     <>
       {/* Button to trigger Modal */}
       <Button
-        variant="primary"
+        variant="secondary"
         onClick={onClick}
-        className="position-relative"
+        className="position-relative ms-auto"
       >
-        Items
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         {/* Badge for displaying item count */}
         <Badge
           bg="dark"

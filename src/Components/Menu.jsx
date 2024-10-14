@@ -18,7 +18,7 @@ const Menu = ({ items, counts, onItemCountChange }) => {
             salePrice={item.salePrice}
             specialTag={item.specialTag}
             count={counts[index]}
-            onBuy={() => onItemCountChange(index, counts[index] + 1)}
+            onBuy={() => onItemCountChange(index)}
           />
         ))}
       </Row>
